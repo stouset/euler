@@ -4,6 +4,7 @@ require 'numeric/round'
 require 'numeric/square'
 require 'integer/divisible'
 require 'integer/factors'
+require 'enumerable/combine'
 require 'enumerable/sum'
 
 require 'math/phi'

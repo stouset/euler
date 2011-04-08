@@ -1,5 +1,7 @@
+require 'enumerable/combine'
+
 module Enumerable
-  def sum
-    self.inject(&:+)
+  def sum(*initial)
+    self.combine(*initial, &:+)
   end
 end
