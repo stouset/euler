@@ -1,5 +1,9 @@
 require 'object/put'
+require 'numeric/math'
+require 'numeric/round'
+require 'numeric/square'
 require 'integer/divisible'
+require 'integer/factors'
 require 'enumerable/sum'
 
 require 'math/phi'
