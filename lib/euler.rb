@@ -1,3 +1,5 @@
+require 'prime'
+
 require 'object/put'
 require 'numeric/math'
 require 'numeric/round'
