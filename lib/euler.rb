@@ -1,5 +1,6 @@
 require 'prime'
 
+require 'kernel/data'
 require 'object/put'
 require 'numeric/math'
 require 'numeric/round'
@@ -13,7 +14,6 @@ require 'enumerable/combination'
 require 'enumerable/combine'
 require 'enumerable/multiply'
 require 'enumerable/sum'
-
 require 'math/phi'
 require 'math/fibonacci'
 
