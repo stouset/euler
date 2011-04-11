@@ -1,7 +1,11 @@
 require 'prime'
 
 class Integer
+  def factorize
+    Prime.prime_deivision(self)
+  end
+  
   def factors
-    Prime.prime_division(self).map(&:first)
+    self.factorize.map(&:first)
   end
 end
