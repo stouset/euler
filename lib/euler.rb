@@ -1,4 +1,5 @@
 require 'prime'
+require 'matrix'
 
 require 'kernel/data'
 require 'object/put'
@@ -17,5 +18,8 @@ require 'enumerable/multiply'
 require 'enumerable/sum'
 require 'math/phi'
 require 'math/fibonacci'
+require 'matrix/minors'
+require 'matrix/diagonal_vectors'
+require 'matrix/star_vectors'
 
 require 'lazylist/list_builder/silence_warning'
