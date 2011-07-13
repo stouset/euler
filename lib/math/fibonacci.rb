@@ -1,7 +1,11 @@
-require 'lazylist'
-
 module Math
-  FIBONACCI = list(0, 1) do
-    build { a + b }.where(:a => FIBONACCI, :b => FIBONACCI.drop(1))
+  FIBONACCI = Enumerator.new do |e|
+    a = 1
+    b = 1
+    
+    loop do
+      e.yield(a)
+      a, b = a + b, a
+    end
   end
 end

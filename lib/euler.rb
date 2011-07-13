@@ -27,5 +27,3 @@ require 'math/phi'
 require 'matrix/minors'
 require 'matrix/diagonal_vectors'
 require 'matrix/star_vectors'
-
-require 'lazylist/list_builder/silence_warning'
