@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby -Ilib -rrubygems -reuler
 
-1.upto(100).tap {|n| (n.sum.squared - n.map(&:squared).sum).put }
+1.upto(100).into {|n| (n.sum.squared - n.map(&:squared).sum) }.put
