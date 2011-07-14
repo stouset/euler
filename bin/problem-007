@@ -1,3 +1,3 @@
-#!/usr/bin/env ruby -Ilib -rrubygems -reuler
+#!/usr/bin/env ruby -Ilib -reuler
 
 Prime.instance.take(10001).last.put

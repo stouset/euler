@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby -Ilib -rrubygems -reuler
+#!/usr/bin/env ruby -Ilib -reuler
 
 data_mi.minors(4, 4).map {|m| m.star_vectors.map(&:multiply).max }.max.put
 

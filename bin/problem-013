@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby -Ilib -rrubygems -reuler
+#!/usr/bin/env ruby -Ilib -reuler
 
 data_ai.sum.to_s.slice(0..9).put
 

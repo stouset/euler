@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby -Ilib -rrubygems -reuler
+#!/usr/bin/env ruby -Ilib -reuler
 
 data_s.split(//).map(&:to_i).each_cons(5).map(&:multiply).max.put
 

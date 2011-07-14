@@ -1,3 +1,3 @@
-#!/usr/bin/env ruby -Ilib -rrubygems -reuler
+#!/usr/bin/env ruby -Ilib -reuler
 
 40.choose(20).put
