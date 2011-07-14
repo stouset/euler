@@ -7,9 +7,14 @@ require 'pathname'
 
 require 'euler'
 
-def method_missing(method, *args, &block)
-  case method
-    when /problem_\d{3}/ then `bin/#{method.to_s.gsub('_', '-')}`.chomp
-    else                      super
+class Object
+  def put
+    self
   end
+end
+
+def method_missing(method, *args, &block)
+  return super unless method =~ /problem_\d{3}/
+  
+  eval Pathname.new("bin/#{method.to_s.gsub('_', '-')}").read
 end
