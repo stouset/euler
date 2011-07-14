@@ -7,6 +7,8 @@ module Math
   end.update(1 => 1)
   
   def self.collatz(n)
+    raise ArgumentError, "Collatz numbers are not defined for n < 1" if n < 1
+    
     COLLATZ[n]
   end
 end
