@@ -13,7 +13,11 @@ class Object
   #
   def method_missing(method, *args, &block)
     return super unless method =~ /problem_\d{3}/
-
-    eval Pathname.new("bin/#{method.to_s.gsub('_', '-')}").read
+    
+    Pathname.new("bin/#{method.to_s.gsub('_', '-')}").into do |path|
+      eval path.read,
+        binding,
+        path.to_s
+    end
   end
 end

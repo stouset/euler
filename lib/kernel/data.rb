@@ -1,6 +1,10 @@
 require 'matrix'
 
 module Kernel
+  def data(file = File.basename(caller.first).gsub(/:.*/, ''))
+    YAML.load_file("data/#{file}.yaml")
+  end
+   
   def data_s
     DATA.read.gsub(%r{\n}, '')
   end
