@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby -Ilib -rrubygems -reuler
+
+(1..1000).map(&:to_words).join.gsub(/\s|-/, '').length.put
