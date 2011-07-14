@@ -2,7 +2,7 @@ class Integer
   WORDS = Hash.new do |cache, n|
     cache[n] = case
       when n.negative?              then "negative #{n.abs.to_word}"
-      when n < 100                  then "#{cache[n / 10 * 10]} - #{cache[n % 10]}"
+      when n < 100                  then "#{cache[n / 10 * 10]}-#{cache[n % 10]}"
       when n < 1000 && n % 100 == 0 then "#{cache[n / 100]} hundred"
       when n < 1000                 then "#{cache[n / 100]} hundred and #{cache[n % 100]}"
       else
