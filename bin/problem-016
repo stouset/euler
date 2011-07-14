@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby -Ilib -rrubygems -reuler
+
+(2 ** 1000).digits.sum.put
