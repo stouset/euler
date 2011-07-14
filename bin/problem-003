@@ -1,3 +1,3 @@
-#!/usr/bin/env ruby -Ilib -reuler
+#!/usr/bin/env irb -f --noprompt --noverbose --noinspect -Ilib -reuler
 
-600_851_475_143.factors.max.put
+600_851_475_143.factors.max

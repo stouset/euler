@@ -8,13 +8,12 @@ require 'pathname'
 require 'euler'
 
 class Object
-  def put
-    self
-  end
-end
+  #
+  # Capture any methods named `problem_nnn` and eval the appropriate binary.
+  #
+  def method_missing(method, *args, &block)
+    return super unless method =~ /problem_\d{3}/
 
-def method_missing(method, *args, &block)
-  return super unless method =~ /problem_\d{3}/
-  
-  eval Pathname.new("bin/#{method.to_s.gsub('_', '-')}").read
+    eval Pathname.new("bin/#{method.to_s.gsub('_', '-')}").read
+  end
 end
