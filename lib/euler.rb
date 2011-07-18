@@ -3,7 +3,6 @@ require 'matrix'
 require 'yaml'
 
 require 'enumerable/combination'
-require 'enumerable/combine'
 require 'enumerable/multiply'
 require 'enumerable/sum'
 require 'integer/choose'

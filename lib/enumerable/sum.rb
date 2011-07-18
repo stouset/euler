@@ -1,7 +1,5 @@
-require 'enumerable/combine'
-
 module Enumerable
   def sum(*initial)
-    self.combine(*initial, &:+)
+    self.reduce(*initial, &:+)
   end
 end
