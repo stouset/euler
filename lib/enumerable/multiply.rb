@@ -1,5 +1,5 @@
 module Enumerable
-  def multiply(*initial)
-    self.reduce(*initial, &:*)
+  def multiply(initial = 1)
+    self.reduce(initial, &:*)
   end
 end
