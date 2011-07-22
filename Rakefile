@@ -2,7 +2,6 @@ require 'rake/testtask'
 
 task :default => :test
 
-Rake::TestTask.new do |test|
-  test.libs    << 'test'
-  test.pattern  = 'test/**/*_test.rb'
+task :test do
+  system %{ RUBYLIB='.:lib:test' parallel_test }
 end
