@@ -1,3 +1,3 @@
-#!/usr/bin/env irb -f --noprompt --noverbose --noinspect -Ilib -reuler
+#!/usr/bin/env time irb -f --noprompt --noverbose --noinspect -Ilib -reuler
 
 1.upto(20).reduce(&:lcm)

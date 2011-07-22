@@ -1,3 +1,3 @@
-#!/usr/bin/env irb -f --noprompt --noverbose --noinspect -Ilib -reuler
+#!/usr/bin/env time irb -f --noprompt --noverbose --noinspect -Ilib -reuler
 
 data.reverse.reduce {|p,c| p.each_cons(2).map(&:max).zip(c).map(&:sum) }.first

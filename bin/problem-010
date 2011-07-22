@@ -1,3 +1,3 @@
-#!/usr/bin/env irb -f --noprompt --noverbose --noinspect -Ilib -reuler
+#!/usr/bin/env time irb -f --noprompt --noverbose --noinspect -Ilib -reuler
 
 Prime.instance.take_while {|p| p <= 2_000_000 }.sum
